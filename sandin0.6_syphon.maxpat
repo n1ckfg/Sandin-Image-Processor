@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2620.0, 135.0, 1449.0, 959.0 ],
+		"rect" : [ 2357.0, 135.0, 1139.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,16 +46,82 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-14",
+					"id" : "obj-21",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "shader.maxpat",
+					"name" : "shader-tv.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1042.0, 393.799999880790665, 239.0, 91.0 ],
+					"patching_rect" : [ 1102.0, 688.0, 196.0, 95.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-20",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-pixelvision.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1092.0, 430.0, 236.0, 91.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-19",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-hypercard.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1068.0, 180.0, 230.0, 92.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-18",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-delay.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1124.0, 311.0, 388.0, 89.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -529,13 +595,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -543,7 +602,36 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"order" : 1,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
 					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
@@ -552,7 +640,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -800,7 +888,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "shader.maxpat",
+				"name" : "shader-delay.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-hypercard.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-pixelvision.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-tv.maxpat",
 				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
