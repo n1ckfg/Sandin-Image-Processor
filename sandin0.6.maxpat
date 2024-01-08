@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 81.0, 340.0, 1805.0, 959.0 ],
+		"rect" : [ 452.0, 169.0, 1805.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,7 +54,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1320.5, 560.666675806045532, 204.0, 63.0 ],
+					"patching_rect" : [ 1268.5, 548.500011801719666, 204.0, 63.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -72,11 +72,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-gameboy.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1312.5, 195.0, 212.0, 93.0 ],
+					"patching_rect" : [ 1337.5, 185.5, 212.0, 93.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -94,11 +94,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-vhsc.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1015.999965906143302, 517.0, 233.0, 91.0 ],
+					"patching_rect" : [ 1033.0, 285.500011801719666, 233.0, 91.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -116,11 +116,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-tv.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1012.499965906143188, 49.0, 196.0, 95.0 ],
+					"patching_rect" : [ 715.499965906143188, 134.5, 196.0, 95.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -138,11 +138,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-pixelvision.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1264.5, 434.0, 236.0, 91.0 ],
+					"patching_rect" : [ 1260.5, 424.0, 236.0, 91.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -160,11 +160,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-hypercard.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1068.0, 180.0, 230.0, 92.0 ],
+					"patching_rect" : [ 1312.5, 303.966666746139481, 230.0, 92.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -182,11 +182,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-delay.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 6,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1224.5, 54.300009655952408, 388.0, 89.0 ],
+					"patching_rect" : [ 955.5, 79.0, 388.0, 89.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -264,7 +264,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 729.999965906143302, 442.799999880790665, 284.0, 88.0 ],
+					"patching_rect" : [ 729.999965906143302, 458.999986529350281, 284.0, 88.0 ],
 					"varname" : "comparator[3]",
 					"viewvisibility" : 1
 				}
@@ -308,7 +308,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 729.999965906143302, 334.799999880790665, 284.0, 88.0 ],
+					"patching_rect" : [ 723.833335439363964, 348.799999880790665, 284.0, 88.0 ],
 					"varname" : "comparator[1]",
 					"viewvisibility" : 1
 				}
@@ -331,7 +331,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 684.999965906143188, 190.5, 284.0, 88.0 ],
+					"patching_rect" : [ 651.999965906143188, 34.300009655952408, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -477,7 +477,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 723.833335439363964, 595.900010967254616, 284.0, 88.0 ],
+					"patching_rect" : [ 791.833335439363964, 587.900010967254616, 284.0, 88.0 ],
 					"varname" : "adder-multiplier",
 					"viewvisibility" : 1
 				}
@@ -583,7 +583,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 389.999965906143302, 634.666682004928589, 284.0, 88.0 ],
+					"patching_rect" : [ 408.999965906143302, 646.666682004928589, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -604,7 +604,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 389.999965906143302, 734.900010967254616, 284.0, 88.0 ],
+					"patching_rect" : [ 355.999965906143302, 764.900010967254616, 284.0, 88.0 ],
 					"varname" : "differentiator",
 					"viewvisibility" : 1
 				}
@@ -656,15 +656,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-18", 0 ]
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-20", 0 ]
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
