@@ -207,7 +207,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 101.0, 667.0, 223.0, 90.0 ],
 					"varname" : "syphon-in",
 					"viewvisibility" : 1
@@ -477,7 +477,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 791.833335439363964, 587.900010967254616, 284.0, 88.0 ],
+					"patching_rect" : [ 797.833335439363964, 585.900010967254616, 284.0, 88.0 ],
 					"varname" : "adder-multiplier",
 					"viewvisibility" : 1
 				}
@@ -670,6 +670,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
@@ -679,13 +686,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -707,18 +707,6 @@
 			"obj-12::obj-54" : [ "live.dial[34]", "V", 0 ],
 			"obj-13::obj-10" : [ "live.dial[35]", "V", 0 ],
 			"obj-13::obj-88" : [ "live.dial[3]", "V", 0 ],
-			"obj-17::obj-52::obj-100" : [ "Gain", "Gain", 0 ],
-			"obj-17::obj-52::obj-101" : [ "Color mode", "Color mode", 0 ],
-			"obj-17::obj-52::obj-16" : [ "range[24]", "range", 0 ],
-			"obj-17::obj-52::obj-21" : [ "pictctrl[72]", "pictctrl[1]", 0 ],
-			"obj-17::obj-52::obj-28" : [ "pictctrl[71]", "pictctrl[1]", 0 ],
-			"obj-17::obj-52::obj-50" : [ "pictctrl[70]", "pictctrl[1]", 0 ],
-			"obj-17::obj-52::obj-56::obj-23" : [ "gswitch2[2]", "gswitch2", 0 ],
-			"obj-17::obj-52::obj-68" : [ "horizontal[3]", "horizontal", 0 ],
-			"obj-17::obj-52::obj-79" : [ "pictctrl[74]", "pictctrl[1]", 0 ],
-			"obj-17::obj-52::obj-94" : [ "Bound mode", "Bound mode", 0 ],
-			"obj-17::obj-52::obj-98" : [ "V offset", "V offset", 0 ],
-			"obj-17::obj-52::obj-99" : [ "H offset", "H offset", 0 ],
 			"obj-1::obj-13" : [ "V", "V", 0 ],
 			"obj-2::obj-1" : [ "live.dial[20]", "V", 0 ],
 			"obj-2::obj-8" : [ "live.dial[21]", "V", 0 ],
@@ -839,13 +827,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ameba.genjit",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "brcosa.genjit",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
@@ -874,12 +855,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "differentiator.maxpat",
 				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
@@ -890,12 +865,6 @@
 				"name" : "empty.maxpat",
 				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "exact_menu.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -926,13 +895,6 @@
 				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rgb2luma.genjit",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
@@ -1013,45 +975,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "video-player.maxpat",
 				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-datatexconvert.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/Vizzie/code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vz.zamplr.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vzgl-outputdim.maxpat",
-				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
