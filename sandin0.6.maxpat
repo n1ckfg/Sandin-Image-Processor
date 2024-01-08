@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 698.0, 87.0, 1147.0, 959.0 ],
+		"rect" : [ 81.0, 340.0, 1805.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,182 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 1.0, 0.803921568627451, 0.803921568627451, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-23",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "syphon-out.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 1320.5, 560.666675806045532, 204.0, 63.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.745098039215686, 0.909803921568627, 0.945098039215686, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-22",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-gameboy.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1312.5, 195.0, 212.0, 93.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.745098039215686, 0.909803921568627, 0.945098039215686, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-14",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-vhsc.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1015.999965906143302, 517.0, 233.0, 91.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.745098039215686, 0.909803921568627, 0.945098039215686, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-21",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-tv.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1012.499965906143188, 49.0, 196.0, 95.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.745098039215686, 0.909803921568627, 0.945098039215686, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-20",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-pixelvision.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1264.5, 434.0, 236.0, 91.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.745098039215686, 0.909803921568627, 0.945098039215686, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-19",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-hypercard.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1068.0, 180.0, 230.0, 92.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.745098039215686, 0.909803921568627, 0.945098039215686, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-18",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-delay.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1224.5, 54.300009655952408, 388.0, 89.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-17",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "syphon-in.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 101.0, 667.0, 223.0, 90.0 ],
+					"varname" : "syphon-in",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 48.0,
 					"id" : "obj-15",
@@ -140,6 +316,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -329,6 +506,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 0.803921568627451, 0.803921568627451, 1.0 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -342,7 +520,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1024.958332657813571, 560.666675806045532, 284.0, 88.0 ],
+					"patching_rect" : [ 1212.5, 778.0, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -359,10 +537,9 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "bfg.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 1514.333334922790527, 458.999986529350281, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
@@ -456,6 +633,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -476,7 +654,35 @@
 
 			}
  ],
-		"lines" : [  ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+ ],
 		"parameters" : 		{
 			"obj-11::obj-17" : [ "flonum[3]", "flonum[2]", 0 ],
 			"obj-11::obj-26" : [ "flonum[4]", "flonum[1]", 0 ],
@@ -494,6 +700,18 @@
 			"obj-12::obj-54" : [ "live.dial[34]", "V", 0 ],
 			"obj-13::obj-10" : [ "live.dial[35]", "V", 0 ],
 			"obj-13::obj-88" : [ "live.dial[3]", "V", 0 ],
+			"obj-17::obj-52::obj-100" : [ "Gain", "Gain", 0 ],
+			"obj-17::obj-52::obj-101" : [ "Color mode", "Color mode", 0 ],
+			"obj-17::obj-52::obj-16" : [ "range[24]", "range", 0 ],
+			"obj-17::obj-52::obj-21" : [ "pictctrl[72]", "pictctrl[1]", 0 ],
+			"obj-17::obj-52::obj-28" : [ "pictctrl[71]", "pictctrl[1]", 0 ],
+			"obj-17::obj-52::obj-50" : [ "pictctrl[70]", "pictctrl[1]", 0 ],
+			"obj-17::obj-52::obj-56::obj-23" : [ "gswitch2[2]", "gswitch2", 0 ],
+			"obj-17::obj-52::obj-68" : [ "horizontal[3]", "horizontal", 0 ],
+			"obj-17::obj-52::obj-79" : [ "pictctrl[74]", "pictctrl[1]", 0 ],
+			"obj-17::obj-52::obj-94" : [ "Bound mode", "Bound mode", 0 ],
+			"obj-17::obj-52::obj-98" : [ "V offset", "V offset", 0 ],
+			"obj-17::obj-52::obj-99" : [ "H offset", "H offset", 0 ],
 			"obj-1::obj-13" : [ "V", "V", 0 ],
 			"obj-2::obj-1" : [ "live.dial[20]", "V", 0 ],
 			"obj-2::obj-8" : [ "live.dial[21]", "V", 0 ],
@@ -510,10 +728,6 @@
 			"obj-38::obj-95" : [ "live.dial[8]", "V", 0 ],
 			"obj-38::obj-96" : [ "live.dial[18]", "V", 0 ],
 			"obj-39::obj-10" : [ "live.dial[25]", "V", 0 ],
-			"obj-40::obj-1" : [ "live.toggle", "live.toggle", 0 ],
-			"obj-40::obj-16" : [ "live.dial[9]", "V", 0 ],
-			"obj-40::obj-18" : [ "live.dial[19]", "V", 0 ],
-			"obj-40::obj-9" : [ "live.dial[1]", "V", 0 ],
 			"obj-42::obj-6" : [ "live.toggle[2]", "live.toggle[1]", 0 ],
 			"obj-5::obj-13" : [ "V[1]", "V", 0 ],
 			"parameterbanks" : 			{
@@ -597,14 +811,6 @@
 					"parameter_longname" : "live.dial[25]"
 				}
 ,
-				"obj-40::obj-16" : 				{
-					"parameter_longname" : "live.dial[9]"
-				}
-,
-				"obj-40::obj-18" : 				{
-					"parameter_longname" : "live.dial[19]"
-				}
-,
 				"obj-42::obj-6" : 				{
 					"parameter_longname" : "live.toggle[2]"
 				}
@@ -619,92 +825,147 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "camera.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "function-generator.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "differentiator.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "value-scrambler-amplitude-classifier.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "comparator.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bfg.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin",
-				"patcherrelativepath" : "../../sandin",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "monitor.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "empty.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "adder-multiplier.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ameba.genjit",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "brcosa.genjit",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "video-player.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
+				"name" : "camera.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "color-encoder.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sync-generator.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
+				"name" : "comparator.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "differentiator.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "empty.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "exact_menu.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "function-generator.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.gl.syphonclient.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "monitor.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "osc.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rgb2luma.genjit",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-delay.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-gameboy.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-hypercard.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-pixelvision.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-tv.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-vhsc.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -712,14 +973,78 @@
 , 			{
 				"name" : "sprinkle.genjit",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "osc.maxpat",
-				"bootpath" : "~/Documents/work/amanda/sandin-gl/Sandin",
+				"name" : "sync-generator.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "syphon-in.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "syphon-out.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "value-scrambler-amplitude-classifier.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-player.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-datatexconvert.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.zamplr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-outputdim.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -729,13 +1054,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-						"angle" : 270,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
