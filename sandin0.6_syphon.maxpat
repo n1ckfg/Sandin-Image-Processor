@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2083.0, 181.0, 1370.0, 959.0 ],
+		"rect" : [ 2620.0, 135.0, 1449.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,7 +40,29 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 0.89 ],
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-14",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1042.0, 393.799999880790665, 239.0, 91.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -75,7 +97,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.815686274509804, 0.788235294117647, 0.788235294117647, 1.0 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -501,15 +522,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-11", 0 ]
+					"destination" : [ "obj-39", 1 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 1 ],
-					"source" : [ "obj-13", 0 ]
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -522,7 +543,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"order" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
+					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -767,6 +797,13 @@
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
