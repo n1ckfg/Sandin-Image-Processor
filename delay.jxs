@@ -1,0 +1,103 @@
+<jittershader name="Delay">
+    <description>Frame delay.</description>
+
+	<param name="modelViewProjectionMatrix" type="mat4" state="MODELVIEW_PROJECTION_MATRIX"/>
+    <param name="textureMatrix0" type="mat4" state="TEXTURE0_MATRIX"/>
+    <param name="textureMatrix1" type="mat4" state="TEXTURE1_MATRIX"/>
+	<param name="position" type="vec3" state="POSITION"/>
+    <param name="texcoord0" type="vec2" state="TEXCOORD"/>
+    <param name="texcoord1" type="vec2" state="TEXCOORD"/>
+	<param name="color" type="vec4" state="COLOR"/>
+
+    <param name="tex0" type="int" default="0"/>
+    <param name="tex1" type="int" default="1"/>
+    <param name="delaySpeed" type="float" default="0.2"/>
+    <param name="lumaThreshold" type="float" default="0.5"/>
+    <param name="alphaMax" type="float" default="1.0"/>
+    <param name="alphaMin" type="float" default="0.1"/>
+
+    <language name="glsl" version="1.5">
+		<bind param="modelViewProjectionMatrix" program="vp"/>
+        <bind param="textureMatrix0" program="vp"/>
+        <bind param="textureMatrix1" program="vp"/>
+		<bind param="position" program="vp"/>
+        <bind param="texcoord0" program="vp"/>
+        <bind param="texcoord1" program="vp"/>
+		<bind param="color" program="vp"/> 
+
+        <bind param="tex0" program="fp"/>
+        <bind param="tex1" program="fp"/>
+        <bind param="delaySpeed" program="fp"/>
+        <bind param="lumaThreshold" program="fp"/>
+        <bind param="alphaMax" program="fp"/>
+        <bind param="alphaMin" program="fp"/>
+
+		<program name="vp" type="vertex"> 
+<![CDATA[
+#version 330 core
+
+in vec3 position;
+in vec2 texcoord0;
+in vec2 texcoord1;
+in vec4 color;
+
+out jit_PerVertex {
+    vec2 texcoord0;
+    vec2 texcoord1;
+	vec4 color;
+} jit_out;
+
+uniform mat4 modelViewProjectionMatrix;
+uniform mat4 textureMatrix0;
+uniform mat4 textureMatrix1;
+
+void main(void) {
+	gl_Position = modelViewProjectionMatrix*vec4(position, 1.);
+    jit_out.texcoord0 = vec2(textureMatrix0*vec4(texcoord0, 0., 1.));
+    jit_out.texcoord1 = vec2(textureMatrix1*vec4(texcoord1, 0., 1.));
+	jit_out.color = color;
+}
+]]>
+		</program>
+		
+        <program name="fp" type="fragment">
+<![CDATA[ 
+#version 330 core 
+
+in jit_PerVertex {
+    vec2 texcoord0;
+    vec2 texcoord1;
+	vec4 color;
+} jit_in;
+layout (location = 0) out vec4 outColor;
+			
+uniform sampler2DRect tex0; 
+uniform sampler2DRect tex1; 
+uniform float delaySpeed; //0.2;
+uniform float lumaThreshold; //0.5;
+uniform float alphaMax; //1.0;
+uniform float alphaMin; //0.1;
+
+float getLuminance(vec3 col) {
+    return dot(col, vec3(0.299, 0.587, 0.114));
+}
+
+void main(void) {
+    vec2 uv = jit_in.texcoord0;
+    vec2 uv1 = jit_in.texcoord1;
+
+    vec3 texColor0 = texture(tex0, uv).xyz;
+    vec3 texColor1 = texture(tex1, uv1).xyz;
+    
+    vec3 diff = texColor0 - texColor1;
+    vec3 diff2 = texColor1 + diff * delaySpeed;
+
+    float luma = getLuminance(texColor0);
+    float alpha = luma < lumaThreshold ? alphaMin : alphaMax;
+
+    outColor = vec4(diff2, alpha);
+}
+]]>
+        </program>
+    </language>
+</jittershader>

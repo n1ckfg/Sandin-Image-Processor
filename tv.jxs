@@ -1,0 +1,83 @@
+<jittershader name="TV">
+    <description>Analog video effect.</description>
+
+	<param name="modelViewProjectionMatrix" type="mat4" state="MODELVIEW_PROJECTION_MATRIX"/>
+	<param name="textureMatrix0" type="mat4" state="TEXTURE0_MATRIX"/>
+	<param name="position" type="vec3" state="POSITION"/>
+	<param name="texcoord" type="vec2" state="TEXCOORD"/>
+	<param name="color" type="vec4" state="COLOR"/>
+
+    <param name="tex0" type="int" default="0"/>
+    <param name="time" type="float" default="0.0"/>
+    <param name="lineThickness" type="float" default="1.2"/>
+    <param name="lineDarkness" type="float" default="0.1"/>
+    <param name="flicker" type="float" default="0.02"/>
+
+    <language name="glsl" version="1.5">
+		<bind param="modelViewProjectionMatrix" program="vp"/>
+		<bind param="textureMatrix0" program="vp"/>
+		<bind param="position" program="vp"/>
+		<bind param="texcoord" program="vp"/>
+		<bind param="color" program="vp"/>
+
+        <bind param="tex0" program="fp"/>
+        <bind param="time" program="fp"/>
+        <bind param="lineThickness" program="fp"/>
+        <bind param="lineDarkness" program="fp"/>
+        <bind param="flicker" program="fp"/>
+
+		<program name="vp" type="vertex"> 
+<![CDATA[
+#version 330 core
+
+in vec3 position;
+in vec2 texcoord;
+in vec4 color;
+
+out jit_PerVertex {
+	vec2 texcoord;
+	vec4 color;
+} jit_out;
+
+uniform mat4 modelViewProjectionMatrix;
+uniform mat4 textureMatrix0;
+
+void main(void) {
+	gl_Position = modelViewProjectionMatrix*vec4(position, 1.);
+	jit_out.texcoord = vec2(textureMatrix0*vec4(texcoord, 0., 1.));
+	jit_out.color = color;
+}
+]]>
+		</program>
+		
+        <program name="fp" type="fragment">
+<![CDATA[ 
+#version 330 core 
+
+in jit_PerVertex {
+	vec2 texcoord;
+	vec4 color;
+} jit_in;
+layout (location = 0) out vec4 outColor;
+			
+uniform sampler2DRect tex0; 
+uniform float time;
+uniform float lineThickness;
+uniform float lineDarkness;
+uniform float flicker;
+
+void main(void) {
+    vec2 uv = jit_in.texcoord;
+    
+    vec3 col = texture(tex0, uv).xyz;
+
+    float scanline = sin(uv.y * lineThickness) * lineDarkness;
+
+    float noise = sin(time * 100.0) * flicker;
+
+    outColor = vec4(col + noise - scanline, 1.0);
+}
+]]>
+        </program>
+    </language>
+</jittershader>
