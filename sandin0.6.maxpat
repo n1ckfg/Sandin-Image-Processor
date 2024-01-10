@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 9.0, 413.0, 1435.0, 747.0 ],
+		"rect" : [ 230.0, 375.0, 1564.0, 883.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,64 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.999965906143302, 588.0, 359.999965906143302, 20.0 ],
+					"text" : "--Phil Morton, 1978"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.999965906143302, 271.799999880790665, 360.000034093856698, 20.0 ],
+					"text" : "Distribution Religion"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.999965906143302, 361.999986529350281, 360.0, 100.0 ],
+					"text" : "\"But in brief, the Image Processor accepts signals = ± 0.5 volts 75 ohm including video signals. These signals (images) are distributed into (usually) a number of processing modules and then (usually) mixed out into a standard color encoder (output module). Since most of the processing modules are voltage controlable and control voltages and images are interchangeable, fantastic combinatorial power is possible.\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.999965906143302, 468.5, 360.0, 114.0 ],
+					"text" : "\"The 'classic' Image Processor contains 8 adder-multipliers, 3 function generators, 3 comparators, 3 value scramblers, 4 oscillators, 3 differentiators, 9 references, 1 sync strip and camera input, 3 inputs, 1 sync generator, 1 color encoder and power supplies. These refer to electrical modules and not aluminum boxes. This constitutes a very powerful processing instrument and because of systems power level (inter-connect-ability), I recommend building approximately this much.\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.999965906143302, 295.966666746139481, 360.0, 60.0 ],
+					"text" : "\"First, it's okay to copy! Believe in the process of copying as much as you can; with all your heart is a good place to start--get into it as straight and honestly as possible. Copying is as good (I think better from this vector-view) as any other way of getting 'there'.\""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -56,28 +114,6 @@
 					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 738.999965906143302, 361.999986529350281, 284.0, 88.0 ],
 					"varname" : "comparator[6]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-24",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "osc.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 844.999965906143302, 556.999986529350281, 284.0, 88.0 ],
-					"varname" : "comparator[5]",
 					"viewvisibility" : 1
 				}
 
@@ -120,7 +156,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1174.5, 141.0, 212.0, 93.0 ],
+					"patching_rect" : [ 1238.5, 139.0, 212.0, 93.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -142,7 +178,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1055.0, 266.500011801719666, 233.0, 91.0 ],
+					"patching_rect" : [ 1055.0, 280.466666746139481, 233.0, 91.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -164,7 +200,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 526.999965906143188, 132.5, 196.0, 95.0 ],
+					"patching_rect" : [ 534.999965906143188, 132.5, 196.0, 95.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -186,7 +222,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1258.5, 39.0, 236.0, 91.0 ],
+					"patching_rect" : [ 1303.5, 342.0, 236.0, 91.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -208,7 +244,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1303.5, 250.799999880790665, 230.0, 92.0 ],
+					"patching_rect" : [ 1303.5, 244.799999880790665, 230.0, 92.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -265,7 +301,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.5, 539.0, 246.0, 69.0 ],
+					"patching_rect" : [ 34.5, 744.0, 246.0, 69.0 ],
 					"text" : "🔓 cmd + e"
 				}
 
@@ -286,30 +322,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 70.5, 400.799999880790665, 284.0, 88.0 ],
+					"patching_rect" : [ 34.5, 621.799999880790665, 284.0, 88.0 ],
 					"varname" : "comparator[4]",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-13",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "osc.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 754.999965906143302, 466.999986529350281, 284.0, 88.0 ],
-					"varname" : "comparator[3]",
 					"viewvisibility" : 1
 				}
 
@@ -375,7 +389,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 940.5, 26.300009655952408, 284.0, 88.0 ],
+					"patching_rect" : [ 1113.5, 26.300009655952408, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -389,11 +403,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 120.0, 365.0, 152.0 ],
+					"patching_rect" : [ 12.0, 103.0, 356.0, 152.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 9,
 					"presentation_rect" : [ 30.0, 117.0, 365.0, 152.0 ],
-					"text" : "This patch converts a camera input signal(s)  into a real time effects mimicing analog computer modules demonstrated by the Sandin Image Processor (IP). Build your own modules by right clicking on the boxes and opening them and an object in the spirit of the Distribution Religion. \n\nTo see the \"5-min Romp thru the IP\" follow the link\nhttps://www.youtube.com/watch?v=8qh6jRzjmcY\n\n"
+					"text" : "This patch converts a camera input signal(s) into a real time effects mimicing analog computer modules demonstrated by the Sandin Image Processor (IP). Build your own modules by right-clicking on the boxes and opening them and an object in the spirit of the Distribution Religion. \n\nTo see the \"5-min Romp thru the IP\" follow the link\nhttps://www.youtube.com/watch?v=8qh6jRzjmcY\n\n"
 				}
 
 			}
@@ -405,7 +419,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 75.0, 356.0, 27.0 ],
+					"patching_rect" : [ 12.0, 58.0, 356.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 75.0, 356.0, 27.0 ],
 					"text" : "Video Synthesizer"
@@ -420,88 +434,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 30.0, 356.0, 33.0 ],
+					"patching_rect" : [ 12.0, 13.0, 356.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 30.0, 356.0, 33.0 ],
 					"text" : "Sandin Image Processor"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"forceaspect" : 1,
-					"id" : "obj-10",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 2037.66666054725647, 59.166651785373688, 225.0, 300.0 ],
-					"pic" : "/Users/ma/Documents/2021/Sandinresearch/203303801_2879264939058564_7001763318812420282_n.jpg"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"forceaspect" : 1,
-					"id" : "obj-8",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 1887.666679382324219, 433.87962693665861, 543.999997138977051, 313.240739093334639 ],
-					"pic" : "/Users/ma/Documents/2021/sandin research/UI-Sandin.jpg"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autofit" : 1,
-					"forceaspect" : 1,
-					"id" : "obj-3",
-					"maxclass" : "fpic",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 1915.00001323223114, 787.492484842113527, 336.666665077209473, 252.499998807907104 ],
-					"pic" : "/Users/ma/Desktop/electronic toys/Sandin_Image_Processor.jpg"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1572.333337783813477, 304.466666746139481, 419.0, 87.0 ],
-					"text" : "But in brief, the Image Processor accepts signals = _+ .5 volts 75 ohm including video signals . These signals (images) are distributed into\n(usually) a number of processing modules and then (usually) mixed out\ninto a standard color encoder (output module) . Since most of the processing modules are voltage controlable and control voltages and images are interchangeable, fantastic combinatorial power is possible ."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"linecount" : 7,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1572.333337783813477, 188.266675925254731, 400.0, 100.0 ],
-					"text" : "The 'classic' Image Processor contains 8 adder-multipliers, 3 function\ngenerators, 3 comparators, 3 value scramblers, 4 oscillators, 3 differentiators, 9 references, 1 sync strip and camera input, 3 inputs, 1 sync generator, 1 color encoder and power supplies . These refer to electrical modules and not aluminum boxes . This constitutes a very\npowerful processing instrument and because of systems power level\n(inter-connect-ability), I recommend building approximately this much ."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"linecount" : 8,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1573.333337783813477, 52.300009655952408, 398.0, 127.0 ],
-					"text" : "Distribution Religion\n\n\"First, it's okay to copy! Believe in the process -.of copying as much as\nyou can ; with all your heart is a good place to start-get into it as\nstraight and honestly as possible . Copying is as good (Ithink better\nfrom this vector-view) as any other way of getting 'there' .\n-Phil Morton\n\n"
 				}
 
 			}
@@ -529,27 +465,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "empty.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1514.333334922790527, 556.274931018660027, 284.0, 88.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 1.0, 0.803921568627451, 0.803921568627451, 1.0 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -564,27 +479,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1159.5, 435.0, 284.0, 88.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-40",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bfg.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1514.333334922790527, 458.999986529350281, 284.0, 88.0 ],
+					"patching_rect" : [ 1102.5, 451.0, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -605,7 +500,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 383.999965906143302, 303.966666746139481, 284.0, 88.0 ],
+					"patching_rect" : [ 417.999965906143302, 302.466666746139481, 284.0, 88.0 ],
 					"varname" : "comparator",
 					"viewvisibility" : 1
 				}
@@ -627,7 +522,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 430.999965906143302, 565.666682004928589, 284.0, 88.0 ],
+					"patching_rect" : [ 438.999965906143302, 565.666682004928589, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -648,7 +543,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 383.999965906143302, 710.900010967254616, 284.0, 88.0 ],
+					"patching_rect" : [ 422.999965906143302, 710.900010967254616, 284.0, 88.0 ],
 					"varname" : "differentiator",
 					"viewvisibility" : 1
 				}
@@ -670,7 +565,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 412.999965906143302, 453.500011801719666, 284.0, 88.0 ],
+					"patching_rect" : [ 422.999965906143302, 435.0, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -692,7 +587,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 640.999965906143302, 26.300009655952408, 284.0, 88.0 ],
+					"patching_rect" : [ 640.999965906143302, 26.300009655952408, 456.999999999999886, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -700,16 +595,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"order" : 1,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -718,13 +604,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 2 ],
-					"source" : [ "obj-13", 0 ]
 				}
 
 			}
@@ -767,36 +646,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 1 ],
-					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 3 ],
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 1 ],
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -837,11 +688,6 @@
 			"obj-12::obj-48" : [ "live.dial[27]", "V", 0 ],
 			"obj-12::obj-53" : [ "live.dial[29]", "V", 0 ],
 			"obj-12::obj-54" : [ "live.dial[34]", "V", 0 ],
-			"obj-13::obj-10" : [ "live.dial[35]", "V", 0 ],
-			"obj-13::obj-88" : [ "live.dial[3]", "V", 0 ],
-			"obj-1::obj-13" : [ "V", "V", 0 ],
-			"obj-24::obj-10" : [ "live.dial[4]", "V", 0 ],
-			"obj-24::obj-88" : [ "live.dial[36]", "V", 0 ],
 			"obj-25::obj-10" : [ "live.dial[37]", "V", 0 ],
 			"obj-25::obj-88" : [ "live.dial[5]", "V", 0 ],
 			"obj-2::obj-1" : [ "live.dial[20]", "V", 0 ],
@@ -880,22 +726,6 @@
 ,
 				"obj-12::obj-54" : 				{
 					"parameter_longname" : "live.dial[34]"
-				}
-,
-				"obj-13::obj-10" : 				{
-					"parameter_longname" : "live.dial[35]"
-				}
-,
-				"obj-13::obj-88" : 				{
-					"parameter_longname" : "live.dial[3]"
-				}
-,
-				"obj-24::obj-10" : 				{
-					"parameter_longname" : "live.dial[4]"
-				}
-,
-				"obj-24::obj-88" : 				{
-					"parameter_longname" : "live.dial[36]"
 				}
 ,
 				"obj-25::obj-10" : 				{
