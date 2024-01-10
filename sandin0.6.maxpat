@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2095.0, 87.0, 1646.0, 1079.0 ],
+		"rect" : [ 2069.0, 87.0, 1646.0, 1079.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,72 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-26",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "adder-multiplier.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 978.5, 767.5, 284.0, 88.0 ],
+					"varname" : "adder-multiplier[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-37",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "differentiator.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 395.999965906143302, 373.999986529350281, 284.0, 88.0 ],
+					"varname" : "differentiator",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-24",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "color-encoder.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 334.999965906143302, 754.799999880790665, 284.0, 88.0 ],
+					"varname" : "comparator[3]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.964705882352941, 0.870588235294118, 0.666666666666667, 1.0 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -55,7 +121,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 687.5, 135.0, 120.0, 88.0 ],
+					"patching_rect" : [ 728.5, 147.0, 120.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -178,7 +244,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 738.999965906143302, 373.999986529350281, 284.0, 88.0 ],
+					"patching_rect" : [ 738.999965906143302, 389.999986529350281, 284.0, 88.0 ],
 					"varname" : "comparator[6]",
 					"viewvisibility" : 1
 				}
@@ -288,7 +354,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 632.5, 748.799999880790665, 175.0, 90.0 ],
+					"patching_rect" : [ 648.5, 754.799999880790665, 175.0, 90.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -310,7 +376,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1045.5, 749.799999880790665, 179.0, 89.0 ],
+					"patching_rect" : [ 1327.499965906143188, 730.799999880790665, 179.0, 89.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -432,7 +498,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 738.999965906143302, 257.799999880790665, 284.0, 88.0 ],
+					"patching_rect" : [ 734.999965906143302, 271.799999880790665, 284.0, 88.0 ],
 					"varname" : "comparator[1]",
 					"viewvisibility" : 1
 				}
@@ -523,7 +589,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 483.999965906143075, 500.999999999999886, 284.0, 88.0 ],
+					"patching_rect" : [ 447.5, 523.999999999999886, 284.0, 88.0 ],
 					"varname" : "adder-multiplier",
 					"viewvisibility" : 1
 				}
@@ -600,28 +666,6 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-37",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "differentiator.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 411.999965906143302, 389.900010967254616, 284.0, 88.0 ],
-					"varname" : "differentiator",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 2,
-					"border" : 1,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
 					"id" : "obj-35",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -661,13 +705,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
@@ -676,13 +713,31 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
+					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
+					"destination" : [ "obj-39", 0 ],
+					"order" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"order" : 1,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -691,6 +746,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -710,6 +772,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -718,20 +794,29 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
 					"source" : [ "obj-35", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"source" : [ "obj-37", 0 ]
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -759,8 +844,19 @@
 			"obj-12::obj-48" : [ "live.dial[27]", "V", 0 ],
 			"obj-12::obj-53" : [ "live.dial[29]", "V", 0 ],
 			"obj-12::obj-54" : [ "live.dial[34]", "V", 0 ],
+			"obj-24::obj-17" : [ "flonum[7]", "flonum[2]", 0 ],
+			"obj-24::obj-26" : [ "flonum[8]", "flonum[1]", 0 ],
+			"obj-24::obj-28" : [ "umenu[6]", "umenu[2]", 0 ],
+			"obj-24::obj-33" : [ "umenu[7]", "umenu[1]", 0 ],
+			"obj-24::obj-38" : [ "umenu[8]", "umenu", 0 ],
+			"obj-24::obj-39" : [ "live.dial[36]", "V", 0 ],
+			"obj-24::obj-45" : [ "flonum[6]", "flonum", 0 ],
+			"obj-24::obj-52" : [ "live.dial[38]", "V", 0 ],
+			"obj-24::obj-75" : [ "live.dial[35]", "V", 0 ],
 			"obj-25::obj-10" : [ "live.dial[37]", "V", 0 ],
 			"obj-25::obj-88" : [ "live.dial[5]", "V", 0 ],
+			"obj-26::obj-1" : [ "live.dial[9]", "V", 0 ],
+			"obj-26::obj-8" : [ "live.dial[39]", "V", 0 ],
 			"obj-2::obj-1" : [ "live.dial[20]", "V", 0 ],
 			"obj-2::obj-8" : [ "live.dial[21]", "V", 0 ],
 			"obj-35::obj-2" : [ "live.dial[11]", "V", 0 ],
@@ -799,12 +895,32 @@
 					"parameter_longname" : "live.dial[34]"
 				}
 ,
+				"obj-24::obj-39" : 				{
+					"parameter_longname" : "live.dial[36]"
+				}
+,
+				"obj-24::obj-52" : 				{
+					"parameter_longname" : "live.dial[38]"
+				}
+,
+				"obj-24::obj-75" : 				{
+					"parameter_longname" : "live.dial[35]"
+				}
+,
 				"obj-25::obj-10" : 				{
 					"parameter_longname" : "live.dial[37]"
 				}
 ,
 				"obj-25::obj-88" : 				{
 					"parameter_longname" : "live.dial[5]"
+				}
+,
+				"obj-26::obj-1" : 				{
+					"parameter_longname" : "live.dial[9]"
+				}
+,
+				"obj-26::obj-8" : 				{
+					"parameter_longname" : "live.dial[39]"
 				}
 ,
 				"obj-2::obj-1" : 				{

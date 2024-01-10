@@ -698,6 +698,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
+					"hidden" : 1,
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -713,6 +714,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
+					"hidden" : 1,
 					"source" : [ "obj-62", 0 ]
 				}
 
@@ -735,6 +737,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
+					"hidden" : 1,
 					"source" : [ "obj-67", 0 ]
 				}
 
