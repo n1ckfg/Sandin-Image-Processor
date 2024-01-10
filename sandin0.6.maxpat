@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 230.0, 375.0, 1564.0, 883.0 ],
+		"rect" : [ 371.0, 251.0, 1165.0, 886.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,28 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.870588235294118, 0.964705882352941, 0.835294117647059, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-1",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "pixlpa-synth.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 824.999965906143188, 506.999986529350281, 156.0, 88.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -67,7 +89,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.999965906143302, 361.999986529350281, 360.0, 100.0 ],
+					"patching_rect" : [ 7.999965906143302, 361.999986529350281, 361.0, 100.0 ],
 					"text" : "\"But in brief, the Image Processor accepts signals = ± 0.5 volts 75 ohm including video signals. These signals (images) are distributed into (usually) a number of processing modules and then (usually) mixed out into a standard color encoder (output module). Since most of the processing modules are voltage controlable and control voltages and images are interchangeable, fantastic combinatorial power is possible.\""
 				}
 
@@ -79,7 +101,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.999965906143302, 468.5, 360.0, 114.0 ],
+					"patching_rect" : [ 7.999965906143302, 468.5, 362.0, 114.0 ],
 					"text" : "\"The 'classic' Image Processor contains 8 adder-multipliers, 3 function generators, 3 comparators, 3 value scramblers, 4 oscillators, 3 differentiators, 9 references, 1 sync strip and camera input, 3 inputs, 1 sync generator, 1 color encoder and power supplies. These refer to electrical modules and not aluminum boxes. This constitutes a very powerful processing instrument and because of systems power level (inter-connect-ability), I recommend building approximately this much.\""
 				}
 
@@ -91,7 +113,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.999965906143302, 295.966666746139481, 360.0, 60.0 ],
+					"patching_rect" : [ 7.999965906143302, 295.966666746139481, 362.0, 60.0 ],
 					"text" : "\"First, it's okay to copy! Believe in the process of copying as much as you can; with all your heart is a good place to start--get into it as straight and honestly as possible. Copying is as good (I think better from this vector-view) as any other way of getting 'there'.\""
 				}
 
@@ -156,7 +178,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1238.5, 139.0, 212.0, 93.0 ],
+					"patching_rect" : [ 1238.5, 139.0, 171.0, 89.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -174,11 +196,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-vhsc.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1055.0, 280.466666746139481, 233.0, 91.0 ],
+					"patching_rect" : [ 1048.0, 252.799999880790665, 165.0, 87.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -196,11 +218,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-tv.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 534.999965906143188, 132.5, 196.0, 95.0 ],
+					"patching_rect" : [ 466.999965906143188, 131.5, 261.0, 93.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -218,11 +240,11 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shader-pixelvision.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1303.5, 342.0, 236.0, 91.0 ],
+					"patching_rect" : [ 1303.5, 342.0, 175.0, 90.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -244,7 +266,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1303.5, 244.799999880790665, 230.0, 92.0 ],
+					"patching_rect" : [ 1293.5, 243.799999880790665, 179.0, 89.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -389,7 +411,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 1113.5, 26.300009655952408, 284.0, 88.0 ],
+					"patching_rect" : [ 1070.5, 26.300009655952408, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -403,10 +425,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 12.0, 103.0, 356.0, 152.0 ],
+					"patching_rect" : [ 12.0, 103.0, 359.0, 152.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 9,
-					"presentation_rect" : [ 30.0, 117.0, 365.0, 152.0 ],
+					"presentation_rect" : [ 30.0, 117.0, 366.0, 152.0 ],
 					"text" : "This patch converts a camera input signal(s) into a real time effects mimicing analog computer modules demonstrated by the Sandin Image Processor (IP). Build your own modules by right-clicking on the boxes and opening them and an object in the spirit of the Distribution Religion. \n\nTo see the \"5-min Romp thru the IP\" follow the link\nhttps://www.youtube.com/watch?v=8qh6jRzjmcY\n\n"
 				}
 
@@ -479,7 +501,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1102.5, 451.0, 284.0, 88.0 ],
+					"patching_rect" : [ 1120.5, 453.0, 284.0, 88.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -587,13 +609,20 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 640.999965906143302, 26.300009655952408, 456.999999999999886, 88.0 ],
+					"patching_rect" : [ 637.333335439363964, 26.300009655952408, 422.999999999999886, 88.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-11", 0 ]
@@ -641,13 +670,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -874,6 +896,13 @@
 			}
 , 			{
 				"name" : "osc.maxpat",
+				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pixlpa-synth.maxpat",
 				"bootpath" : "~/GitHub/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

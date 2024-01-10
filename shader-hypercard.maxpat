@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2050.0, 349.0, 1871.0, 959.0 ],
+		"rect" : [ 2117.0, 139.0, 1322.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,12 +42,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 224.0, 30.0, 30.0 ]
+					"patching_rect" : [ 556.0, 107.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -55,12 +55,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.0, 224.0, 30.0, 30.0 ]
+					"patching_rect" : [ 496.0, 107.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -73,7 +73,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, -20.0, 14.0, 29.0 ],
+					"patching_rect" : [ 161.5, -20.0, 14.0, 29.0 ],
 					"proportion" : 0.5
 				}
 
@@ -87,7 +87,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 107.5, -20.0, 14.0, 29.0 ],
+					"patching_rect" : [ 81.5, -20.0, 14.0, 29.0 ],
 					"proportion" : 0.5
 				}
 
@@ -98,7 +98,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 119.0, 13.0, 42.0, 20.0 ],
+					"patching_rect" : [ 96.0, 13.0, 42.0, 20.0 ],
 					"text" : "thresh"
 				}
 
@@ -109,7 +109,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 43.0, 13.0, 30.0, 20.0 ],
+					"patching_rect" : [ 20.0, 13.0, 30.0, 20.0 ],
 					"text" : "size"
 				}
 
@@ -121,7 +121,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 422.0, 216.0, 29.5, 22.0 ],
+					"patching_rect" : [ 464.0, 231.0, 29.5, 22.0 ],
 					"text" : "0.4"
 				}
 
@@ -133,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 355.0, 216.0, 29.5, 22.0 ],
+					"patching_rect" : [ 397.0, 231.0, 29.5, 22.0 ],
 					"text" : "3"
 				}
 
@@ -147,7 +147,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.0, 35.0, 50.0, 22.0 ]
+					"patching_rect" : [ 96.0, 35.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -160,7 +160,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 43.0, 35.0, 50.0, 22.0 ]
+					"patching_rect" : [ 20.0, 35.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -171,7 +171,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 304.5, 307.0, 138.0, 22.0 ],
+					"patching_rect" : [ 171.5, 318.0, 138.0, 22.0 ],
 					"text" : "param finalThreshold $1"
 				}
 
@@ -183,7 +183,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 256.5, 283.0, 119.0, 22.0 ],
+					"patching_rect" : [ 123.5, 294.0, 119.0, 22.0 ],
 					"text" : "param matrixSize $1"
 				}
 
@@ -195,7 +195,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 223.0, 339.0, 161.0, 22.0 ],
+					"patching_rect" : [ 90.0, 350.0, 161.0, 22.0 ],
 					"text" : "jit.gl.slab @file hypercard.jxs"
 				}
 
@@ -207,7 +207,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 412.0, 147.0, 58.0, 22.0 ],
+					"patching_rect" : [ 454.0, 162.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -246,7 +246,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 66.0, 150.0, 20.0 ],
+					"patching_rect" : [ 20.0, 62.0, 150.0, 20.0 ],
 					"text" : "SHADER-HYPERCARD"
 				}
 
@@ -255,7 +255,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -267,12 +267,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 81.0, 178.0, 30.0, 30.0 ]
+					"patching_rect" : [ 24.0, 192.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -369,9 +369,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

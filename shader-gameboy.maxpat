@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1985.0, 454.0, 1871.0, 959.0 ],
+		"rect" : [ 2303.0, 95.0, 1041.0, 1015.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -55,7 +55,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -73,7 +73,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 194.5, -20.0, 14.0, 29.0 ],
+					"patching_rect" : [ 152.5, -20.0, 14.0, 29.0 ],
 					"proportion" : 0.5
 				}
 
@@ -87,7 +87,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 98.5, -20.0, 14.0, 29.0 ],
+					"patching_rect" : [ 78.5, -20.0, 14.0, 29.0 ],
 					"proportion" : 0.5
 				}
 
@@ -98,7 +98,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 123.0, 13.0, 42.0, 20.0 ],
+					"patching_rect" : [ 95.0, 12.0, 42.0, 20.0 ],
 					"text" : "thresh"
 				}
 
@@ -109,7 +109,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 47.0, 13.0, 30.0, 20.0 ],
+					"patching_rect" : [ 19.0, 12.0, 30.0, 20.0 ],
 					"text" : "size"
 				}
 
@@ -147,7 +147,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 119.0, 35.0, 50.0, 22.0 ]
+					"patching_rect" : [ 91.0, 34.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -160,7 +160,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 35.0, 50.0, 22.0 ]
+					"patching_rect" : [ 19.0, 34.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -246,7 +246,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 66.0, 123.0, 20.0 ],
+					"patching_rect" : [ 18.0, 65.0, 123.0, 20.0 ],
 					"text" : "SHADER-GAMEBOY"
 				}
 
@@ -255,7 +255,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -267,7 +267,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -369,9 +369,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
