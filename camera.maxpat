@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 740.0, 469.0, 640.0, 480.0 ],
+		"rect" : [ 351.0, 278.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,25 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "message",
+					"id" : "obj-4",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 80.75, 121.0, 29.5, 22.0 ],
-					"text" : "1"
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 481.5, 74.0, 34.0, 22.0 ],
+					"text" : "sel 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "button",
+					"id" : "obj-3",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 523.0, 84.0, 24.0, 24.0 ]
+					"patching_rect" : [ 242.0, 13.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -366,7 +366,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.5, 395.5, 63.0, 23.0 ],
+					"patching_rect" : [ 446.5, 344.5, 63.0, 23.0 ],
 					"text" : "format $1"
 				}
 
@@ -374,7 +374,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"items" : [ "(null) - 160 x 90", ",", "(null) - 160 x 90", ",", "(null) - 160 x 120", ",", "(null) - 160 x 120", ",", "(null) - 176 x 144", ",", "(null) - 176 x 144", ",", "(null) - 320 x 180", ",", "(null) - 320 x 180", ",", "(null) - 320 x 240", ",", "(null) - 320 x 240", ",", "(null) - 352 x 288", ",", "(null) - 352 x 288", ",", "(null) - 432 x 240", ",", "(null) - 432 x 240", ",", "(null) - 640 x 360", ",", "(null) - 640 x 480", ",", "(null) - 640 x 480", ",", "(null) - 800 x 448", ",", "(null) - 800 x 448", ",", "(null) - 800 x 600", ",", "(null) - 800 x 600", ",", "(null) - 864 x 480", ",", "(null) - 864 x 480", ",", "(null) - 960 x 720", ",", "(null) - 960 x 720", ",", "(null) - 1024 x 576", ",", "(null) - 1024 x 576", ",", "(null) - 1280 x 720", ",", "(null) - 1280 x 720", ",", "(null) - 1600 x 896", ",", "(null) - 1600 x 896", ",", "(null) - 1920 x 1080", ",", "(null) - 1920 x 1080" ],
+					"items" : [ "(null) - 1920 x 1080", ",", "(null) - 1280 x 720", ",", "(null) - 1080 x 1920", ",", "(null) - 1760 x 1328", ",", "(null) - 640 x 480", ",", "(null) - 1328 x 1760", ",", "(null) - 1552 x 1552" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -393,7 +393,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 321.5, 395.5, 73.0, 23.0 ],
+					"patching_rect" : [ 295.5, 344.5, 73.0, 23.0 ],
 					"text" : "vdevice $1"
 				}
 
@@ -401,7 +401,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"items" : [ "FaceTime HD Camera", ",", "C922 Pro Stream Webcam" ],
+					"items" : "FaceTime HD Camera",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -420,7 +420,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 398.0, 157.0, 79.0, 23.0 ],
+					"patching_rect" : [ 407.5, 183.0, 79.0, 23.0 ],
 					"text" : "getformatlist"
 				}
 
@@ -434,7 +434,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 481.5, 157.0, 72.0, 23.0 ],
+					"patching_rect" : [ 491.0, 183.0, 72.0, 23.0 ],
 					"text" : "getvdevlist"
 				}
 
@@ -446,7 +446,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 564.0, 182.0, 37.0, 22.0 ],
+					"patching_rect" : [ 186.0, 178.0, 37.0, 22.0 ],
 					"text" : "close"
 				}
 
@@ -471,7 +471,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 106.0, 9.0, 150.0, 20.0 ],
+					"patching_rect" : [ 106.0, 9.0, 60.0, 20.0 ],
 					"text" : "CAMERA"
 				}
 
@@ -490,18 +490,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 570.0, 81.0, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -509,30 +497,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 136.0, 178.0, 35.0, 22.0 ],
 					"text" : "open"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 50.0, 138.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 50.0, 191.0, 63.0, 22.0 ],
-					"text" : "qmetro 16"
 				}
 
 			}
@@ -639,13 +603,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-18", 1 ]
 				}
@@ -667,21 +624,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"hidden" : 1,
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
@@ -697,23 +639,23 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"hidden" : 1,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
