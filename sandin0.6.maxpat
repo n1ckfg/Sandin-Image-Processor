@@ -684,7 +684,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -692,7 +692,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -710,6 +710,13 @@
 					"destination" : [ "obj-26", 0 ],
 					"order" : 0,
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -766,13 +773,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
 					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-7", 0 ]
 				}
 
 			}
