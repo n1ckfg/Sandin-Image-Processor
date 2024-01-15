@@ -1,5 +1,5 @@
 <jittershader name="Film">
-    <description>Film grain effect.</description>
+    <description>Analog film effect.</description>
 
   <param name="modelViewProjectionMatrix" type="mat4" state="MODELVIEW_PROJECTION_MATRIX"/>
   <param name="textureMatrix0" type="mat4" state="TEXTURE0_MATRIX"/>
@@ -8,9 +8,10 @@
   <param name="color" type="vec4" state="COLOR"/>
 
     <param name="tex0" type="int" default="0"/>
-    <param name="gamma" type="float" default="1.2"/>
-    <param name="posterizeLevels" type="float" default="90.0"/>
-    <param name="texelSize" type="vec2" default="0.008 0.011"/>
+    <param name="time" type="float" default="0.0"/>
+    <param name="lineThickness" type="float" default="1.2"/>
+    <param name="lineDarkness" type="float" default="0.1"/>
+    <param name="flicker" type="float" default="0.02"/>
 
     <language name="glsl" version="1.5">
     <bind param="modelViewProjectionMatrix" program="vp"/>
@@ -20,9 +21,9 @@
     <bind param="color" program="vp"/>
 
         <bind param="tex0" program="fp"/>
-        <bind param="gamma" program="fp"/>
-        <bind param="posterizeLevels" program="fp"/>
-        <bind param="texelSize" program="fp"/>
+        <bind param="time" program="fp"/>
+        <bind param="dim" program="fp"/>
+        <bind param="zoom" program="fp"/>
 
     <program name="vp" type="vertex"> 
 <![CDATA[
@@ -50,17 +51,18 @@ void main(void) {
     
         <program name="fp" type="fragment">
 <![CDATA[ 
-#version 330 core
+#version 330 core 
 
 in jit_PerVertex {
   vec2 texcoord;
   vec4 color;
 } jit_in;
 layout (location = 0) out vec4 outColor;
-
-uniform sampler2DRect tex0;
+      
+uniform sampler2DRect tex0; 
 uniform float time;
-uniform vec2 iResolution;
+//uniform float dim;
+//uniform float zoom;
 
 // https://github.com/mattdesl/glsl-film-grain
 // https://www.npmjs.com/package/glsl-noise
@@ -267,40 +269,30 @@ vec3 tone_map_aces(vec3 x) {
   return clamp((x * (a * x + b)) / (x * (c * x + d) + e), 0.0, 1.0);
 }
 
-void mainImage(out vec4 fragColor, in vec2 fragCoord) {
-    vec2 uv = fragCoord.xy / iResolution.xy;
-    //uv = vec2(uv.x, abs(1.0 - uv.y));
+void main(void) {
+    vec2 uv = jit_in.texcoord;
 
-    vec3 texColor = texture2D(tex0, uv).rgb;
+    vec3 texColor = texture(tex0, uv).xyz;
 
-    //some large grain for this demo
+    float dim = 1024.0;
     float zoom = 0.35;
-    vec3 g = vec3(grain(uv, iResolution * zoom, time));
+    // some large grain for this demo
+    vec3 g = vec3(grain(uv, vec2(dim, dim) * zoom, time));
 
-    //get the luminance of the image
+    // get the luminance of the image
     float luminance = luma(texColor);
-    //vec3 desaturated = vec3(luminance);
 
-    //now blend the noise over top the backround 
-    //in our case soft-light looks pretty good
-    //vec3 color = blendSoftLight(desaturated, g);
+    // now blend the noise over top the backround, in our case soft-light looks pretty good
     vec3 color = blendSoftLight(texColor, g);
 
-    //and further reduce the noise strength based on some 
-    //threshold of the tex0 luminance
+    // and further reduce the noise strength based on some threshold of the tex0 luminance
     float response = smoothstep(0.05, 0.5, luminance);
-    //color = mix(color, desaturated, pow(response,2.0));
+    
     color = mix(color, tone_map_aces(texColor), pow(response,2.0));
 
-    fragColor = vec4(color, 1.0);
+    outColor = vec4(color, 1.0);    
 }
-
-void main() {
-    mainImage(gl_FragColor, gl_FragCoord.xy);
-}
-
 ]]>
         </program>
     </language>
 </jittershader>
-

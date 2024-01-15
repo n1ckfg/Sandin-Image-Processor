@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2069.0, 87.0, 1646.0, 1079.0 ],
+		"rect" : [ 454.0, 96.0, 1008.0, 837.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,28 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.745098039215686, 0.909803921568627, 0.945098039215686, 1.0 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-11",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "shader-film.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 819.499965906143188, 281.966666746139481, 203.500000000000114, 85.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 2,
 					"border" : 1,
@@ -683,103 +705,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 1,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"order" : 1,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"order" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 1 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-8", 0 ]
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -932,7 +866,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "adder-multiplier.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -940,55 +874,55 @@
 , 			{
 				"name" : "brcosa.genjit",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camera.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "color-encoder.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "comparator.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "differentiator.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "empty.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "function-generator.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hsflow.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1003,70 +937,77 @@
 			}
 , 			{
 				"name" : "monitor.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "osc.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pixlpa-synth.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shader-delay.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shader-film.maxpat",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shader-gameboy.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shader-glitch.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shader-hypercard.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shader-pixelvision.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shader-tv.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shader-vhsc.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1074,41 +1015,41 @@
 , 			{
 				"name" : "sprinkle.genjit",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sync-generator.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "syphon-in.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "syphon-out.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "value-scrambler-amplitude-classifier.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video-player.maxpat",
-				"bootpath" : "~/GitHub/Sandin-Image-Processor",
+				"bootpath" : "~/Development/openFrameworks/of_v0.12.0_osx_release/Pix2Pixelvision/Sandin-Image-Processor",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
