@@ -20,10 +20,10 @@
     <bind param="texcoord" program="vp"/>
     <bind param="color" program="vp"/>
 
-        <bind param="tex0" program="fp"/>
-        <bind param="time" program="fp"/>
-        <bind param="dim" program="fp"/>
-        <bind param="zoom" program="fp"/>
+    <bind param="tex0" program="fp"/>
+    <bind param="time" program="fp"/>
+    <bind param="dim" program="fp"/>
+    <bind param="zoom" program="fp"/>
 
     <program name="vp" type="vertex"> 
 <![CDATA[
@@ -61,8 +61,8 @@ layout (location = 0) out vec4 outColor;
       
 uniform sampler2DRect tex0; 
 uniform float time;
-//uniform float dim;
-//uniform float zoom;
+uniform float dim;
+uniform float zoom;
 
 // https://github.com/mattdesl/glsl-film-grain
 // https://www.npmjs.com/package/glsl-noise
