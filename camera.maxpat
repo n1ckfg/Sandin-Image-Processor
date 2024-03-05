@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 7,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 481.5, 74.0, 34.0, 22.0 ],
+					"patching_rect" : [ 243.0, 96.0, 34.0, 22.0 ],
 					"text" : "sel 1"
 				}
 
@@ -58,19 +58,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 242.0, 13.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "bang" ],
-					"patching_rect" : [ 496.0, 116.0, 62.0, 22.0 ],
-					"text" : "t b b b b b"
+					"patching_rect" : [ 189.0, 8.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -87,8 +75,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 7,
+							"minor" : 6,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -374,7 +362,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"items" : [ "(null) - 1920 x 1080", ",", "(null) - 1280 x 720", ",", "(null) - 1080 x 1920", ",", "(null) - 1760 x 1328", ",", "(null) - 640 x 480", ",", "(null) - 1328 x 1760", ",", "(null) - 1552 x 1552" ],
+					"items" : "BGRA - 32BGRA - 1920 x 1080",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -401,7 +389,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"items" : "FaceTime HD Camera",
+					"items" : [ "FaceTime HD Camera", ",", "C922 Pro Stream Webcam", ",", "OBS Virtual Camera" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -420,7 +408,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.5, 183.0, 79.0, 23.0 ],
+					"patching_rect" : [ 295.5, 8.5, 79.0, 23.0 ],
 					"text" : "getformatlist"
 				}
 
@@ -434,7 +422,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 491.0, 183.0, 72.0, 23.0 ],
+					"patching_rect" : [ 219.0, 8.5, 72.0, 23.0 ],
 					"text" : "getvdevlist"
 				}
 
@@ -446,7 +434,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.0, 178.0, 37.0, 22.0 ],
+					"patching_rect" : [ 258.0, 141.0, 37.0, 22.0 ],
 					"text" : "close"
 				}
 
@@ -495,7 +483,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 178.0, 35.0, 22.0 ],
+					"patching_rect" : [ 208.0, 141.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -589,35 +577,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-18", 4 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-18", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-18", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-18", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"hidden" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -654,7 +615,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -669,6 +630,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"hidden" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
